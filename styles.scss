@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'DancingScript';
+    src: url(fonts/DancingScript-Regular.ttf);
+}
+
+
+$primary-color: #ff633b;
+
+/******************/
+/* mobile version */
+/******************/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.assos-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 7px;
+}
+
+.assos-name {
+    font-family: 'DancingScript';
+    font-size: medium;
+}
+
+.assos-logo {
+    width: 64px;
+    height: auto;
+}
+
+.open-nav {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    width: 20%;
+    height: auto;
+    font-size: larger;
+}
+
+.empty {
+    @extend .open-nav
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 3.5em;
+}
+
+nav {
+    background-color: $primary-color;
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+    }
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.welcome {
+    img {
+        width: fit-content;
+        height: fit-content;
+        box-shadow: 0px 1px 5px black;
+    }
+
+    & div {
+        position: absolute;
+        color: white;
+    }
+
+}
+
+.donate {
+    color: white;
+    background-color: $primary-color;
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    
+}
+
+article {
+
+    padding: 20px;
+    p {text-align: justify;}
+    h2 {color: $primary-color;}
+    
+}
+
+
+
+
+
+
+/*******************/
+/* desktop version */
+/*******************/
+
+@media (min-width: 768px){ 
+    
+}

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url(fonts/DancingScript-Regular.ttf);
+}
+
+/******************/
+/* mobile version */
+/******************/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.assos-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: 7px;
+}
+
+.assos-name {
+  font-family: 'DancingScript';
+  font-size: medium;
+}
+
+.assos-logo {
+  width: 64px;
+  height: auto;
+}
+
+.open-nav, .empty {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  width: 20%;
+  height: auto;
+  font-size: larger;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 3.5em;
+}
+
+nav {
+  background-color: #ff633b;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+section {
+  text-align: center;
+}
+
+.welcome img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
+}
+
+.welcome div {
+  position: absolute;
+  color: white;
+}
+
+.donate {
+  color: white;
+  background-color: #ff633b;
+  padding: 20px;
+  border: none;
+  border-radius: 100px;
+}
+
+article {
+  padding: 20px;
+}
+
+article p {
+  text-align: justify;
+}
+
+article h2 {
+  color: #ff633b;
+}
+
+/*******************/
+/* desktop version */
+/*******************/
+/*# sourceMappingURL=styles.css.map */
