@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -15,17 +16,61 @@
 </head>
 <body>
     <header>
-
+        <button class="open-nav material-icons" id="openNav">menu</button>
+        <div class="assos-title">
+            <img src="images/logo.png" alt="logo" class="assos-logo">
+            <h1 class="assos-name">Les boules de poil</h1>
+        </div>
+        <div class="empty"></div>
     </header>
-    <nav></nav>
-    <section>
-
+    <nav id="navbar">    
+        <a class="current-page" href="#">Accueil</a>
+        <a href="evenements.html">Evenement</a>    
+    </nav>
+    <section class="welcome">
+        <div>
+            <h1>Bienvenue sur le site</h1>
+            <p>Nous aidons les animaux en détresse</p>
+            <button class="donate">Faire un don</button>
+        </div>
+        <img src="images/chat-et-chien.jpg" alt="image de fond">
     </section>
-    <section>
-
+    <section class="introduce">
+        <article>
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
+        <article>
+            <h2>Notre histoire</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
+        <article>
+            <h2>Notre objectif</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
     </section>
     <footer>
 
     </footer>
+
+    <script>
+        let navbar = document.getElementById('navbar')
+        let isOpen = false
+
+        document.getElementById('openNav').addEventListener('click', () => {
+            isOpen = !isOpen
+            if (isOpen) {
+                navbar.style.display = 'flex'
+            } else {
+                navbar.style.display = 'none'
+            }
+        })
+    </script>
 </body>
 </html>
