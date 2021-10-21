@@ -79,20 +79,12 @@ section {
   text-align: center;
 }
 
-.welcome img {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-box-shadow: 0px 1px 5px black;
-          box-shadow: 0px 1px 5px black;
-}
-
-.welcome div {
-  position: absolute;
+.welcome {
   color: white;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0.5px 10px black;
+          box-shadow: 0px 0.5px 10px black;
+  background-image: url(images/chat-et-chien.jpg);
 }
 
 .donate {
@@ -113,6 +105,13 @@ article p {
 
 article h2 {
   color: #ff633b;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: darkgrey;
+  color: white;
 }
 
 /*******************/
