@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Les boules de poil</title>
+</head>
+<body>
+    <header>
+        <button class="open-nav material-icons" id="openNav">menu</button>
+        <div class="assos-title">
+            <img src="images/logo.png" alt="logo" class="assos-logo">
+            <h1 class="assos-name">Les boules de poil</h1>
+        </div>
+        <div class="empty"></div>
+    </header>
+    <nav id="navbar">    
+        <a href="index.html">Accueil</a>
+        <a class="current-page" href="#">Evenements</a>  
+    </nav>
+    <section class="intro">
+            <h1>Evenements</h1>
+            <p>Voici les évènements que nous organisons</p>
+    </section>
+    <section class="events">
+        <article>
+            <h2>Discussion</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
+        <article>
+            <h2>Adoption</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
+        <article>
+            <h2>Sensibilisation</h2>
+            <p>
+                Sed dignissim, turpis quis facilisis accumsan, ex diam cursus tellus, at pharetra arcu nisi quis urna. Nunc rutrum velit at fermentum sagittis. Maecenas aliquam sagittis hendrerit. Quisque eu lobortis augue. Integer nec mollis nisl, vitae imperdiet mi. Ut dui quam, sagittis sit amet turpis lacinia, tempus condimentum tortor. Donec non vulputate sapien. Nunc luctus est arcu, a bibendum mauris venenatis convallis. Cras bibendum risus ornare lobortis iaculis. Sed dolor nunc, dignissim non velit at, posuere aliquam nisl.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p><span class="material-icons">copyright</span> Les boules de poil 2021</p>
+    </footer>
+
+    <script>
+        let navbar = document.getElementById('navbar')
+        let isOpen = false
+
+        document.getElementById('openNav').addEventListener('click', () => {
+            isOpen = !isOpen
+            if (isOpen) {
+                navbar.style.display = 'flex'
+            } else {
+                navbar.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+</html>
