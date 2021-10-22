@@ -95,6 +95,19 @@ section {
   border-radius: 100px;
 }
 
+form {
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  row-gap: 20px;
+}
+
+form div {
+  display: -ms-grid;
+  display: grid;
+  padding: 5px 0;
+}
+
 article {
   padding: 20px;
 }
