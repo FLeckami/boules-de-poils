@@ -134,4 +134,40 @@ footer {
 /*******************/
 /* desktop version */
 /*******************/
+@media (min-width: 768px) {
+  .open-nav, .empty {
+    display: none;
+  }
+  header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px)[3];
+        grid-template-columns: repeat(3, 150px);
+    gap: 10px;
+    text-align: left;
+    height: 3em;
+  }
+  nav a {
+    text-align: center;
+  }
+  .welcome {
+    width: 100vw;
+    height: auto;
+  }
+  .introduce {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  form {
+    width: 50%;
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
+}
 /*# sourceMappingURL=styles.css.map */

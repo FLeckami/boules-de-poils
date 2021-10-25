@@ -124,5 +124,39 @@ footer {
 /*******************/
 
 @media (min-width: 768px){ 
-    
+    .open-nav {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        gap: 10px;
+        text-align: left;
+        height: 3em;
+
+        a {
+            text-align: center;
+            
+        }
+    }
+
+    .welcome {
+        width: 100vw;
+        height: auto;
+    }
+
+    .introduce {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    form {
+        width: 50%;
+        transform: translateX(45%);
+    }
 }
