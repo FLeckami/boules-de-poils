@@ -91,6 +91,16 @@ section {
     
 }
 
+form {
+    display: grid;
+    padding: 20px;
+    row-gap: 20px;
+    div {
+        display: grid;
+        padding: 5px 0
+    }
+}
+
 article {
 
     padding: 20px;
