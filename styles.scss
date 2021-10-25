@@ -80,7 +80,7 @@ section {
     filter: brightness(50%);
     width: 100%;
     height: auto;
-    box-shadow: 0px 0.5px 10px black;
+    box-shadow: 0px 5px 10px lightgrey;
 }
 
 .welcome {
@@ -89,7 +89,8 @@ section {
     position: absolute;
     color: white;
     filter: none;
-    padding: 20px;
+    font-size: small;
+    text-align: center;
     z-index: 3;
     
 }
@@ -160,6 +161,7 @@ footer {
     .welcome {
         width: 100vw;
         height: auto;
+        font-size: 3vw;
     }
 
     .introduce {
