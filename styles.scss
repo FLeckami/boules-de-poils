@@ -60,7 +60,7 @@ nav {
         text-decoration: none;
         padding: 10px 0;
 
-        &:hover {
+        &:not(.current-page):hover {
             background-color: lighten($color: $primary-color, $amount: 20%);
         }
     }
@@ -69,6 +69,13 @@ nav {
     justify-content: flex-start;
     align-items: stretch;
     text-align: center;
+}
+
+.current-page {
+    background-color: #eeeeee;
+    color: $primary-color;
+    cursor: default;
+
 }
 
 section {

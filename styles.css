@@ -75,8 +75,14 @@ nav a {
   padding: 10px 0;
 }
 
-nav a:hover {
+nav a:not(.current-page):hover {
   background-color: #ffb4a1;
+}
+
+.current-page {
+  background-color: #eeeeee;
+  color: #ff633b;
+  cursor: default;
 }
 
 section {
