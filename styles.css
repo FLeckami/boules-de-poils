@@ -113,6 +113,10 @@ section {
   cursor: pointer;
 }
 
+.donate:hover {
+  background-color: #ffb4a1;
+}
+
 form {
   display: -ms-grid;
   display: grid;
