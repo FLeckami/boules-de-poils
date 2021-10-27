@@ -183,6 +183,9 @@ footer {
     height: auto;
     font-size: 3vw;
   }
+  .donate {
+    font-size: 1.5vw;
+  }
   .introduce {
     display: -ms-grid;
     display: grid;
